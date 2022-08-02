@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <%- include("./partials/head") %> 
+
+<body class="register">
+    <%- include("./partials/header") %> 
+    <main class="register__main">
+        <section class="register__main__section general__main__section">
+           <h1>Registrate</h1>
+        
+           <form action="" class="form__row">
+                <div class="form__box">
+                    <label class="form__label" for="nombre">Nombre</label>
+                    <input class="form__input" type="text" id="nombre" >
+                    <span class="form__error__msg">El nombre es obligatorio</span>
+                </div>
+                <div class="form__box">
+                    <label class="form__label" for="apellido">Apellido</label>
+                    <input class="form__input" type="text" id="apellido" >
+                    <span class="form__error__msg">El apellido es obligatorio</span>
+                </div>
+                <div class="form__box">
+                    <label class="form__label" for="usuario">Nombre de usuario</label>
+                    <input class="form__input" type="text" id="usuario" >
+                    <span class="form__error__msg">El nombre de usuario es obligatorio</span>
+                </div>
+                <div class="form__box">
+                    <label class="form__label" for="email">Correo electrónico</label>
+                    <input class="form__input" type="email" id="email" >
+                    <span class="form__error__msg">El email es obligatorio</span>
+                </div>
+                <div class="form__box">
+                    <label class="form__label" for="password">Contraseña</label>
+                    <input class="form__input" type="password" id="password" >
+                    <span class="form__error__msg">La contraseña debe tener entre 6 y 12 caracteres</span>
+                </div>
+                <div class="form__box">
+                    <label class="form__label" for="password2">Confirma tu contraseña</label>
+                    <input class="form__input" type="password" id="password2" >
+                    <span class="form__error__msg">Las contraseñas no coinciden</span>
+                </div>
+                <div class="form__box__flex">
+                    <p class="form__link">¿Estás registrado? <a href="/login">Ingresá</a></p>
+                </div>
+                <div class="form__box__flex">
+                    <a class="form__button form__button--cancel" href="">Cancelar</a>
+                    <button class="form__button form__button--submit" type="submit">Registrate</button>
+                </div>
+              
+
+           </form>
+        </section>
+    </main>
+</body>
+
+</html>

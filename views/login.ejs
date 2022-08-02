@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <%- include("./partials/head") %> 
+
+<body class="login">
+    <%- include("./partials/header") %> 
+    <main class="login__main">
+        <section class="login__main__section general__main__section">
+           <h1>Ingresá</h1>
+        
+           <form action="/user/profile">
+                <div class="form__box">
+                    <label class="form__label" for="usuario">Nombre de usuario o email</label>
+                    <input class="form__input" type="text" id="usuario" name="email">
+                    <span class="form__error__msg">Ingresá tu nombre de usuario o email</span>
+                </div>
+                <div class="form__box">
+                    <label class="form__label" for="password">Contraseña</label>
+                    <input class="form__input" type="password" id="password" name="password">
+                    <span class="form__error__msg">La contraseña debe tener entre 6 y 12 caracteres</span>
+                </div>
+                <div class="form__box__flex">
+                    <input class="form__input--checkbox" type="checkbox" id="recordame"><label for="recordame">Recordame</label>
+                </div>
+                <div class="form__box__flex">
+                    <button class="form__button form__button--submit" type="submit">Ingresá</button>
+                </div>
+                <div class="form__box__flex">
+                    <p class="form__link">¿No estás registrado? <a href="/register">Registrate</a></p>
+                </div>
+                <div class="form__box__flex">
+                    <p class="form__link"><a href="#">¿Olvidaste tu contraseña?</a></p>
+                </div>
+
+           </form>
+        </section>
+    </main>
+</body>
+
+</html>

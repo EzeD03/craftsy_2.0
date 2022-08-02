@@ -1,0 +1,15 @@
+.login h1 {
+    text-align: center;
+    margin: 30px 0 20px;
+}
+.login__main__section{
+    padding: 20px;
+    width: 300px;
+    margin: 30px auto;
+}
+
+@media (min-width:768px) {
+    .login__main__section .form__box,  .login__main__section .form__box__flex{
+        width: 100%;
+     } 
+}

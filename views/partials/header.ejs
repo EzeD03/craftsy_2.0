@@ -1,0 +1,22 @@
+<header class="home__header">
+    <div class="home__header__logo">
+        <a href="/"><img src="/images/logo.png" alt=""></a> 
+    </div>
+    <nav class="home__header__nav--search">
+        <form action="" >
+            <div class="form__box__search">
+                <input type="text" placeholder="Encontrá lo que necesitas.." name="keywords"><button type="submit" class="form__button--search"><i class="fa fa-search"></i></button>
+            </div>
+        </form>
+    </nav>
+    <button class="home__header__burger" onclick="document.querySelector('.home__header__nav--navigation').classList.toggle('home__show'); document.querySelector('.home__header__nav--user').classList.toggle('home__show')"><i class="fa fa-bars"></i> Menu </button>
+    <ul class="home__header__nav--navigation">
+        <li><a href="">Computadoras</a></li>
+        <li><a href="">Tablets</a></li>
+        <li><a href="">Celulares</a></li>
+    </ul>
+    <ul class="home__header__nav--user">
+        <li><a href="/user/login">Login</a></li>
+        <li><a href="/user/register">Registro</a></li>
+    </ul>
+ </header>

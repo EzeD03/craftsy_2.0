@@ -1,0 +1,45 @@
+:root {
+    --colorRojo : #DF5837;
+    --colorCeleste : cadetblue;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('/images/bg-2.png');
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+ul, ol {
+    padding-left: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* clases standards */
+
+.general__main__section{
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.general__button__product {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--colorRojo);
+    color: #fff;
+}
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <%- include("./partials/head") %> 
+
+<body class="register">
+    <%- include("./partials/header") %> 
+    <main class="register__main">
+        <section class="register__main__section general__main__section">
+           <h1>Perfil de usuario</h1>
+        
+           <form action="" class="form__row">
+                <div class="form__box">
+                    <label class="form__label" for="nombre">Nombre</label>
+                    <input class="form__input" type="text" id="nombre" value="Mi nombre">
+                </div>
+                <div class="form__box">
+                    <label class="form__label" for="apellido">Apellido</label>
+                    <input class="form__input" type="text" id="apellido" value="Mi apellido">
+                </div>
+                <div class="form__box">
+                    <label class="form__label" for="usuario">Nombre de usuario</label>
+                    <input class="form__input" type="text" id="usuario" value="Mi nombre de usuario">
+                </div>
+                <div class="form__box">
+                    <label class="form__label" for="email">Correo electrónico</label>
+                    <input class="form__input" type="email" id="email" value="Mi correo electrónico" disabled>
+                </div>
+                <div class="form__box__flex--checkbox">
+                    <h5>Género</h5>
+                    <hr>
+                    <div class="form__flex--checkbox">
+                        <input class="form__input--checkbox" value="f" type="radio" id="femenino" name="genero">
+                        <label for="femenino"> Femenino</label>
+                    </div>
+                    <div class="form__flex--checkbox">
+                        <input class="form__input--checkbox" value="m" type="radio" id="masculino" name="genero">
+                        <label for="masculino"> Masculino</label>
+                    </div>
+                    <div class="form__flex--checkbox">
+                        <input class="form__input--checkbox" value="n" type="radio" id="nodice" name="genero">
+                        <label for="nodice">Prefiero no decirlo</label>
+                    </div>
+                </div>
+                <div class="form__box__flex--checkbox">
+                    <h5>Hobbies</h5>
+                    <hr>
+                    <div class="form__flex--checkbox">
+                        <input class="form__input--checkbox" value="musica" type="checkbox" id="musica" name="genero">
+                        <label for="musica">Música</label>
+                    </div>
+                    <div class="form__flex--checkbox">
+                        <input class="form__input--checkbox" value="deporte" type="checkbox" id="deportes" name="genero">
+                        <label for="deportes">Deportes</label>
+                    </div>
+                    <div class="form__flex--checkbox">
+                        <input class="form__input--checkbox" value="codear" type="checkbox" id="codear" name="genero">
+                        <label for="codear">Codear</label>
+                    </div>
+                </div>
+                <div class="form__box__flex--checkbox">
+                    <h5>Domicilio</h5>
+                    <hr>
+                    <div>
+                        <label class="form__label" for="calle">Calle y altura</label>
+                        <input class="form__input" type="text" id="calle">
+                    </div>
+                    <div>
+                        <select class="form__select" name="ciudad" id="ciudad">
+                            <option value="" hidden selected>Selecciona tu ciudad</option>
+                            <option value="loma hermosa">Loma Hermosa</option>
+                            <option value="san miguel">San Miguel</option>
+                            <option value="caba">Ciudad Autónoma de Buenos Aires</option>
+                            <option value="maipu">Maipú</option>
+                            <option value="santa maria">Santa María</option>
+                            <option value="berisso">Berisso</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="form__select" name="ciudad" id="ciudad">
+                            <option value="" hidden selected>Selecciona tu provincia</option>
+                            <option value="buenos aires">Buenos Aires</option>
+                            <option value="mendoza">Mendoza</option>
+                            <option value="jujuy">Jujuy</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form__box__flex--checkbox">
+                    <h5>Acerca de mí</h5>
+    
+
+                    <textarea class="form__textarea" name="biografia" id="biografia" cols="30" rows="5"></textarea>
+                    <label class="form__button form__button--cancel pointer" for="avatar">Subir imagen de perfil</label>
+                    <input hidden type="file" id="avatar">
+                   
+                </div>
+                <div class="form__box__flex">
+                    <a class="form__button form__button--cancel" href="">Cancelar</a>
+                    <button class="form__button form__button--submit" type="submit">Guardar cambios</button>
+                </div>
+              
+
+           </form>
+        </section>
+    </main>
+</body>
+
+</html>
